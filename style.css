@@ -1,0 +1,276 @@
+/* Reset de estilos para remover margens e paddings padrão */
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+/* INSERINDO AS FONTES PERSONALIZADAS */
+@font-face {
+    font-family: 'Palatino';
+    src: url('/fonts/palatino-linotype.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Castellar';
+    src: url('/fonts/castellar.ttf') format('truetype');
+}
+a:any-link{
+    text-decoration: none;
+}
+/* criando as variáveis principais */
+:root {
+    --branco-principal: #ffffff;
+    --preto: #000000;
+    --roxo-principal: #413668;
+    --cor-texto: #292444;
+}
+
+/* INÍCIOS */
+.apresentacao_imagem {
+
+    width: 100vw;
+}
+
+.apresentacao_empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apresentacao_empresa img {
+    max-width: 90vw;
+    padding-top: 2.75rem;
+    padding-bottom: 1.7rem;
+
+}
+
+.apresentacao_empresa p {
+    font-family: 'Palatino';
+    color: var(--cor-texto);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.equipe_banner {
+    text-align: center;
+}
+
+.equipe_banner h2 {
+    font-family: 'Castellar';
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0.5px;
+    margin-bottom: 0;
+
+}
+
+.equipe_card_1 {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.equipe_card_1 h3 {
+    text-align: center;
+    color: var(--cor-texto);
+    font-family: 'Palatino';
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.equipe_card_1 h4 {
+    color: var(--cor-texto);
+    text-align: center;
+    font-family: 'Palatino';
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.equipe_card_1 h5 {
+    font-family: 'Palatino';
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.equipe_card_2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+    height: 239px;
+    text-align: center;
+    padding: 0;
+    align-items: center;
+}
+
+.equipe_card_2 h3 {
+    font-family: 'Palatino';
+    color: var(--cor-texto);
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.equipe_cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.equipe_card_2 h4 {
+    font-family: 'Palatino';
+    color: var(--cor-texto);
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.equipe_card_2 h5 {
+    font-family: 'Palatino';
+    color: var(--cor-texto);
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--cor-texto);
+}
+
+.footer_inicio,
+.footer_fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_inicio img {
+    max-width: 50vw;
+    padding-top: 30px;
+}
+
+.btn_whatsaap p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Castellar';
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+}
+
+.btn_instagram p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Castellar';
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+}
+
+.container_btn img {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+
+.btn_whatsaap,
+.btn_instagram {
+    width: 155px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.5rem;
+    margin: 1.5rem 0;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+}
+
+.btn_whatsaap {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Castellar';
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+}
+
+.container_contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.container_contato p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Palatino';
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.contato_tel,
+.contato_email,
+.contato_adress {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+
+}
+.copyright {
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.copyright a{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+.copyright p{
+    font-size: 0.525rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
